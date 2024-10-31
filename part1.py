@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # plot the sequence
     plt.xlabel('x')
     plt.ylabel(f"f(x) = {A}^x mod {N}")
-    plt.plot(seq)
+    plt.plot([i for i in range(1, X_MAX)], seq, 'o-')
     plt.savefig(f'part1_{A}_{N}.png')
 
     # find the period of the sequence automatically
